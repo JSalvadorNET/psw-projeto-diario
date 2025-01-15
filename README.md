@@ -8,71 +8,62 @@ Diário virtual feito com Python e Django
 
 ## 📝 Descrição
 
-Este projeto é um estudo e demonstra como criar um **ransomware básico** para entender a funcionalidade e os **princípios de criptografia**. Este repositório é destinado exclusivamente para fins educacionais.
-
+Este projeto é um diário virtual desenvolvido em Python utilizando o framework Django. O objetivo principal é permitir que os usuários registrem e gerenciem suas anotações diárias. O sistema oferece funcionalidades como criação e exclusão de entradas, além da adição de pessoas, tags e gráficos de desempenho.
 
 ## ❓ O que foi feito
 
-Criação de um ransomware básico utilizando **Python**.
-Implementação de uma funcionalidade para criptografar arquivos no diretório de destino. Adição de um mecanismo para gerar uma "chave de descriptografia". Testes com diretórios de exemplo para validar a eficácia do código.
+Configuração inicial de um projeto Django, incluindo os arquivos básicos do framework.
 
-**encrypter.py:**
+Uso do SQLite como base de dados padrão para armazenar informações do diário e pessoas associadas às entradas.
 
-Objetivo: Criptografar um arquivo para torná-lo inacessível sem a chave correta.
+CRUD para entradas do diário:
+- Criar novas anotações
+- Excluir anotações
+- Visualizar anotações mais recentes ou filtrar por data de criação
 
-Processo:
-- Abrir o arquivo: Lê os dados originais (ex.: teste.txt).
-- Excluir o arquivo original: Remove o arquivo para impedir acesso ao conteúdo original.
-- Criptografar: Usa a chave testeransomwares com o algoritmo AES (modo CTR) para criptografar os dados.
-- Salvar como criptografado: Cria um novo arquivo com extensão .ransomware.
-
-**decrypter.py**
-
-Objetivo: Reverter o processo de criptografia e restaurar o arquivo original.
-
-Processo:
-- Abrir o arquivo criptografado: Lê os dados de um arquivo já criptografado (ex.: teste.txt.ransomwaretroll).
-- Descriptografar: Usa a mesma chave testeransomwares para decifrar os dados.
-- Excluir o arquivo criptografado: Remove o arquivo criptografado.
-- Restaurar o arquivo: Cria um novo arquivo com o conteúdo descriptografado (ex.: teste.txt).
-
+Geração de um gráfico que mostra as pessoas mais frequentes nas entradas e um gráfico que mostra o númeor de entradas adicionadas nos últimos 5 meses.
 
 ## 🔥 Resumo
 
 **Linguagem**
 
 ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+**Frameworks**
+
+![DJANGO](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
+
+**Database**
+
+![SQL Lite](https://img.shields.io/badge/Sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 **Ambiente**
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
-
-**Arquivos**
-
-- *decrypter.py* (decriptador)
-- *encrypter.py* (encriptador)
-- *teste.txt* (texto descriptografado)
-- *teste.txt.ransomware* (texto criptografado)
+![WINDOWS](https://img.shields.io/badge/Windows-017AD7?style=for-the-badge&logo=windows&logoColor=white)
 
 ## 🖥 Como usar
 
 Clone este repositório:
 ```bash
-git clone https://github.com/JSalvadorNET/basic-ransomware-creator  
-cd basic-ransomware-creator 
+git clone https://github.com/JSalvadorNET/psw-projeto-diario
+cd psw-projeto-diario
 ```
 Certifique-se de que você tem Python 3 instalado.
 Instale as dependências necessárias (se houver).
 
-Para criptografar o arquivo teste.txt:
+Em um editor de código instale:
 ```bash
-python encrypter.py
+pip intall django
+pip install pillow
 ```
-Para descriptografar o arquivo teste.txt.ramsonware:
+Execute o servidor django:
 ```bash
-python decrypter.py
+python manage.py runserver  
 ```
+
+Em um navegador, abra a url http://127.0.0.1:8000/diario
 
 ##
 
@@ -80,74 +71,61 @@ python decrypter.py
 
 ## 📝 Description
 
-This project is a study that demonstrates how to create a basic ransomware to understand its functionality and the principles of encryption. This repository is intended exclusively for educational purposes.
+This project is a virtual diary developed in Python using the Django framework. The primary goal is to allow users to record and manage their daily notes. The system provides features such as creating and deleting entries, adding people, tags, and performance charts.
 
 
 ## ❓ What was done
 
-Development of a basic ransomware using **Python**. Implementation of functionality to encrypt files in the target directory. Addition of a mechanism to generate a "decryption key." Testing with example directories to validate the code's effectiveness.
+Initial configuration of a Django project, including the framework's basic files.
 
-**encrypter.py:**
+Using SQLite as the default database to store diary information and people associated with the entries.
 
-Objective: Encrypt a file to make it inaccessible without the correct key.
+CRUD for diary entries:
+- Create new notes
+- Delete notes
+- View the most recent notes or filter by creation date
 
-Process:
-- Open the file: Reads the original data (e.g., teste.txt).
-- Delete the original file: Removes the file to prevent access to the original content.
-- Encrypt: Uses the key testeransomwares with the AES algorithm (CTR mode) to encrypt the data.
-- Save as encrypted: Creates a new file with the .ransomware extension.
-
-**decrypter.py**
-
-Objective: Reverse the encryption process and restore the original file.
-
-Process:
-- Open the encrypted file: Reads the data of an already encrypted file (e.g., teste.txt.ransomware).
-- Decrypt: Uses the same key testeransomwares to decrypt the data.
-- Delete the encrypted file: Removes the encrypted file
-- Restore the file: Creates a new file with the decrypted content (e.g., teste.txt).
-
+Generating a chart that shows the most frequent people in the entries and a chart showing the number of entries added in the last 5 months.
 
 ## 🔥 Summary
 
-**Programming language**
+**Linguagem**
 
 ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+**Frameworks**
+
+![DJANGO](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
+
+**Database**
+
+![SQL Lite](https://img.shields.io/badge/Sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 **Environment**
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
+![WINDOWS](https://img.shields.io/badge/Windows-017AD7?style=for-the-badge&logo=windows&logoColor=white)
 
-**Files**
-
-- *decrypter.py* (decryption tool)
-- *encrypter.py* (encryption tool)
-- *teste.txt* (decrypted text)
-- *teste.txt.ransomware* (encrypted text)
 
 ## 🖥 How to use
 
 Clone this repository:
 ```bash
-git clone https://github.com/JSalvadorNET/basic-ransomware-creator  
-cd basic-ransomware-creator 
+git clone https://github.com/JSalvadorNET/psw-projeto-diario
+cd psw-projeto-diario
 ```
-Ensure that you have Python 3 installed. Install any necessary dependencies (if applicable).
+Make sure you have Python 3 installed. Install the required dependencies (if any).
 
-To encrypt the file teste.txt:
+In a code editor, install:
 ```bash
-python encrypter.py
+pip install django
+pip install pillow
 ```
-To decrypt the file teste.txt.ransomware:
+Run the Django server:
+bash
+Copiar código
 ```bash
-python decrypter.py
+python manage.py runserver  
 ```
-
-
-
-
-Open a browser and access "http://localhost:5050" to view the fake page. Enter credentials to see what the tool captures ;)
-
-
-<img src="Phishing-linux/assets/facebook-page.png" alt="Facebook" width="900">
+In a browser, open the URL http://127.0.0.1:8000/diario
